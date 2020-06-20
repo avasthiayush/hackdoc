@@ -117,6 +117,67 @@
     
         </div>
     </div>
+    <div class="container"> 
+        <div class="row">
+            <div class="col-xl-6 col-lg-12" id="r1" >
+               <div class="container" id="gen-info" >
+                    <p id="p1">Facilities Available <i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
+                    <form action="/dashboard/update/facavail"  method="POST">
+                    <input(type="hidden", name="_method", value="PUT")>
+                    <table>
+                        <tr>
+                            <th>
+                                Facility
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                        </tr>
+                        <%for(let i=0;i<hospital.facility.length;i++){%>
+                            <tr>
+                            <%if(i==0){%>
+                            <td>
+                                ICU
+                            </td>
+                            <%}%>
+                            <%if(i==1){%>
+                                <td>
+                                    CT scan
+                                </td>
+                            <%}%>
+                            <%if(i==2){%>
+                                <td>
+                                    Pharmacy
+                                </td>
+                            <%}%>
+                            <%if(i==3){%>
+                                <td>
+                                    Ambulance
+                                </td>
+                            <%}%>
+                            <%if(i==4){%>
+                                <td>
+                                    Blood Bank
+                                </td>
+                            <%}%>
+                            <%if(i%2==0){%>
+                                <td><input autocomplete="off" type="text"  name="fac" id="inp1" value="<%=hospital.facility[i]%>" ></td>
+                            <%}%>
+                            <%if(i%2!=0){%>
+                                <td><input autocomplete="off" type="text"  name="fac" id="inp1" value="<%=hospital.facility[i]%>" style="background-color: #f3f3f3;"></td>
+                            <%}%>
+                            
+                            </tr>
+                        <%}%>
+                    </table>
+                    <div  style="text-align: center; padding: 10px 0 20px 0;">
+                        <button class="btnn btnn1">Save Changes</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
