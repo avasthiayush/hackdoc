@@ -104,3 +104,119 @@ a:hover{
 .navbar .navbar-right li:first-child a {
     padding-right: 30px;
 }
+.navbar .nav-item i {
+    font-size: 18px;
+}
+.navbar .dropdown-item i {
+    font-size: 16px;
+    min-width: 22px;
+}
+.navbar ul.nav li.active a, .navbar ul.nav li.open > a {
+    background: transparent !important;
+}	
+.navbar .nav .get-started-btn {
+    min-width: 120px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.navbar ul.nav li.open > a.get-started-btn {
+    color: #fff;
+    background: #33cabb ;
+}
+.navbar .dropdown-menu {
+    border-radius: 20px;
+    border-color: #1de4e4;
+    box-shadow: 0 12px 18px rgba(11, 119, 207, 0.5);
+}
+.navbar .nav .dropdown-menu li {
+    color: #999;
+    font-weight: normal;
+}
+.navbar .nav .dropdown-menu li a, .navbar .nav .dropdown-menu li a:hover, .navbar .nav .dropdown-menu li a:focus {
+    padding: 8px 20px;
+    line-height: normal;
+}
+.navbar .navbar-form {
+    border: none;
+}
+.navbar .dropdown-menu.form-wrapper {
+    width: 280px;
+    padding: 20px;
+    left: auto;
+    right: 0;
+    font-size: 14px;
+}
+.navbar .dropdown-menu.form-wrapper a {		
+    color: #33cabb;
+    padding: 0 !important;
+}
+.navbar .dropdown-menu.form-wrapper a:hover{
+    text-decoration: underline;
+}
+.navbar .form-wrapper .hint-text {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.navbar .form-wrapper  .btn, .navbar .form-wrapper .social-btn .btn:hover {
+    color: #fff;
+    margin: 0;
+    padding: 0 !important;
+    font-size: 13px;
+    border: none;
+    transition: all 0.4s;
+    text-align: center;
+    line-height: 34px;
+    width: 47%;
+    text-decoration: none;
+}	
+.navbar  .btn-primary {
+    background: #33cabb;
+}
+.navbar  .btn-primary:hover {
+    background: #33cabb;
+}
+.navbar  .btn-info {
+    background: #64ccf1;
+}
+
+.navbar .form-wrapper .form-footer {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+}
+.navbar .form-wrapper .form-footer a:hover{
+    text-decoration: underline;
+}
+.navbar .form-wrapper .checkbox-inline input {
+    margin-top: 3px;
+}
+
+#profile{
+    padding: 5px 60px 0px;
+    font-size: 25px; 
+    text-align: center;
+}
+.navbar .checkbox-inline {
+    font-size: 13px;
+}
+.navbar .navbar-right .dropdown-toggle::after {
+    display: none;
+}
+#lll:hover{
+    background-color: #33cabb;
+}
+#pprofile{
+    text-align: center;
+}
+#p01{
+    margin: 5px 10px 0 40px;
+    padding: 3px 8px 8px 8px;
+    font-size: 20px;
+}
+@media (min-width: 1200px){
+    .form-inline .input-group {
+        width: 300px;
+        margin-left: 30px;
+    }
+}
