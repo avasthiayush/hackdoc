@@ -24,14 +24,24 @@ app.use(express.static(path.join(__dirname + '/Public')));
 // app.set('views', path.join(__dirname, 'views'));
 
 
+//db connection
+const uri = process.env.dbURL;
+mongoose.connect(uri, {useNewUrlParser: true ,useUnifiedTopology: true}, () =>{
+    console.log('Connected to db');
+})
+
+mongoose.set('useFindAndModify', false);
+const Hospital = require('./models/hospital-model');
+
+
 app.get('/',function(req,res)
 {
     res.render('home');
 });
 
-app.get('/team',function(req,res){
-    res.render('team');
-});
+// app.get('/team',function(req,res){
+//     res.render('team');
+// });
 
 app.listen(port,()=>{
     console.log(`Server is running at http://localhost:${port}`);
