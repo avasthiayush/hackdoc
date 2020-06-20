@@ -419,3 +419,68 @@ a:hover{
     to {transform: scale(1)}
     }
     
+    
+@media (max-width: 1100px ){
+    #profile{
+        font-size: 25px;
+        padding: 5px 30px 0px;
+    }
+ }
+  @media(min-width: 990){
+     #profile{
+     padding: 5px 60px 0px;
+     font-size: 25px; ;
+     }
+     
+  }
+  @media (max-width: 990px){
+     .navbar .dropdown-menu.form-wrapper {
+         width: 100%;
+         padding: 10px 15px;
+         background: transparent;
+         border: none;
+     }
+     .navbar .form-inline {
+         display: block;
+     }
+     .navbar .input-group {
+         width: 100%;
+     }
+     .navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
+         display: block;
+     }
+     #lop{
+         margin: auto;
+     }
+     #lll{
+         margin: auto;
+     }
+     .heading {
+         color: black;
+         font-size: 30px;
+         position: relative;
+         top: 10%;
+         left: 50%;
+         transform: translateX(-50%);
+         font-family: 'Josefin Sans', sans-serif;
+         text-transform: uppercase;
+         letter-spacing: 3px;
+         text-align: center;
+         white-space: pre-wrap;
+     }
+     .card{
+         margin-left: 70px;
+         margin-right: 70px;
+     }
+     #sb1{
+         margin: 5px 10px 0px 0px;
+         padding-bottom: 8px;
+         padding-top: 8px;
+      }
+     
+ }
+  @media (max-width: 768px ){
+     #rr1{
+         display: none;
+     }
+  }
