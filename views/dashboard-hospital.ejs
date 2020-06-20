@@ -236,6 +236,91 @@
 
         </div>
     </div>
+    <div class="container"> 
+        <div class="row">
+            <div class="col-xl-6 col-lg-12" id="r2" >
+               <div class="container" id="gen-info" >
+                    <p id="p1">Availability of blood <i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
+                    <form action="/dashboard/update/bloodavail"  method="POST">
+                        <input(type="hidden", name="_method", value="PUT")>
+                    <table>
+                        <tr>
+                            <th>Blood Group</th>
+                            <th>Units</th>
+                            <th>Blood Group</th>
+                            <th>Units</th>
+                        </tr>
+                        <%for(let i=0;i<hospital.bloodavail1.length;i++){%>
+                         <tr>
+                            <%if(i==0){%>
+                                <td>
+                                    A-
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="number"   name="blood1" id="inp1" value="<%=hospital.bloodavail1[i]%>">
+                                </td>
+                                <td>
+                                    A+
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="number"  name="blood2" id="inp1" value="<%=hospital.bloodavail2[i]%>">
+                                </td>
+                            <%}%>
+                            <%if(i==1){%>
+                                <td>
+                                    B-
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="number"   name="blood1" id="inp1" value="<%=hospital.bloodavail1[i]%>">
+                                </td>
+                                <td>
+                                    B+
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="number"   name="blood2" id="inp1" value="<%=hospital.bloodavail2[i]%>">
+                                </td>
+                            <%}%>
+                            <%if(i==2){%>
+                                <td>
+                                   O- 
+                                </td>
+                                <td>
+                                    <input  type="number"   name="blood1" id="inp1" value="<%=hospital.bloodavail1[i]%>">
+                                </td>
+                                <td>
+                                    O+
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="number"  name="blood2" id="inp1" value="<%=hospital.bloodavail2[i]%>">
+                                </td>
+                            <%}%>
+                            <%if(i==3){%>
+                                <td>
+                                    AB-
+                                </td>
+                                <td>
+                                    <input autocomplete="off" type="number"   name="blood1" id="inp1" value="<%=hospital.bloodavail1[i]%>">
+                                </td>
+                                <td>
+                                    AB+
+                                </td>
+                                <td>
+                                    <input autocomplete="off"  type="number"   name="blood2" id="inp1" value="<%=hospital.bloodavail2[i]%>">
+                                </td>
+                            <%}%>
+                         </tr>
+                        <%}%>
+                    </table>
+                    <div  style="text-align: center; padding: 10px 0 20px 0;">
+                        <button class="btnn btnn1">Save Changes</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
