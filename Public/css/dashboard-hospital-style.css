@@ -37,3 +37,70 @@ a:hover{
   ::-webkit-scrollbar-thumb:hover {
     background: #b30000; 
   }
+  .form-control {
+    box-shadow: none;		
+    font-weight: normal;
+    font-size: 13px;
+}
+.form-control:focus {
+    border-color: #33cabb;
+    box-shadow: 0 0 18px rgba(34, 139, 238, 0.3);
+}
+
+.navbar {
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 30px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #dfe3e8;
+    border-radius: 0;
+ }
+
+.navbar .navbar-brand, .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+    padding-left: 10px;
+    font-size: 20px;
+    padding-right: 5px;
+}
+#lol{
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+#node{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.navbar .navbar-brand b {
+    font-weight: bold;
+    color: #33cabb;		
+}
+.navbar .form-inline {
+    display: inline-block;
+}
+.navbar .nav li {
+    position: relative;
+}
+.navbar .nav li a {
+    color: #888;
+}
+
+.navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
+    color: #fff;
+    background: red;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    margin-left: 15px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 30px;
+}	
+
+.navbar .nav .btn-primary:hover, .navbar .nav .btn-primary:focus {		
+    color: #fff;
+    outline: none;
+    background: #33cabb;
+}
+.navbar .navbar-right li:first-child a {
+    padding-right: 30px;
+}
