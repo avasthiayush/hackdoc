@@ -350,3 +350,73 @@ td{
     padding: 10px;
     text-align: center;
 }
+tr{
+    border-bottom: 1px solid #dddddd ;
+}
+tr:nth-child(odd){
+    background-color: #f3f3f3;
+}
+tr:last-of-type{
+    border-bottom: 3px solid red;
+}
+tr.active-row{
+    color: red;
+}
+.lebel-name{
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+}
+
+.formi input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid red;
+    outline: none;
+    margin-bottom: 15px;
+}
+.formi input:focus{
+    padding-left: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 5px rgba(231, 49, 49, 0.3);;
+}
+
+#inp1{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1px solid red;
+    outline: none;
+}
+
+#inp1:focus{
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px rgba(231, 49, 49, 0.3);
+}
+
+#inp2{
+    width: 100%;
+    text-align: left;
+}
+
+
+
+
+
+.btnn{
+    border: 2px solid red;
+    justify-content: center;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    transition: 0.8s;
+    overflow: hidden;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    color: black;
+    transition: 0.6s;
+    position: absolute; height: auto;
+    
+  }
