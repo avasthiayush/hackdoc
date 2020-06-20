@@ -234,4 +234,23 @@ body{
 	@keyframes zoom {
 	from {transform: scale(0)}
 	to {transform: scale(1)}
-	}
+    }
+    @media (max-width: 1000px){
+        #c1{
+            width: 50%;
+            
+        } 
+    }
+    @media (max-width: 550px){
+        #c1{
+            width: 80%;
+            
+        } 
+    }
+    @media (max-width: 1000px){
+        #sb1{
+           margin: 5px 10px 0px 0px;
+           padding-bottom: 8px;
+           padding-top: 8px;
+        }
+    }
