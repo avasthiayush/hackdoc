@@ -7,12 +7,12 @@ const hospitalSchema = new Schema({
     email:String,
     name:{ type:String ,uppercase:true},
     address:{ type:String, default:"iamaddress" , uppercase:true},
-    contact1:{ type:String, default:"0000000000" ,minlength:10},
+    contact1:{ type:String, default:"0000000000"},
     contact2:{ type:String, default:"0000000000"},
-    facility:{type:Array, default: ["No","No","No","No","No"]},
+    facility:{type:Array, default: ["NO","NO","NO","NO","NO"]},
     bedavail1:{type:Array, default: [0,0,0]},
     bedavail2:{type:Array, default: [0,0,0]},
-    docavail:{type:Array, default: ["No","No","No","No","No"]},
+    docavail:{type:Array, default: ["NO","NO","NO","NO","NO"]},
     bloodavail1:{type:Array, default: [0,0,0,0]},
     bloodavail2:{type:Array, default: [0,0,0,0]}
 });
