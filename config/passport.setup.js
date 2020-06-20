@@ -40,16 +40,16 @@ passport.use(
                     googleId:profile.id,
                     email:profile.emails[0].value,
                     name:profile.emails[0].value,
-                    address:"allahabad",
-                    contact1:"7425034595",
-                    contact2:"7453636335",
-                    facility1:['ambu','blood','venti','chair'],
-                    // facility2:[true,true,false,true],
-                    bedavail:['general','icu'],
-                    bedavail1:[100,80],
-                    bedavail2:[50,20],
-                    docavail1:['sergen','physician','ortho','gyro'],
-                    docavail2:[true,false,true,false]
+                    // address:"allahabad",
+                    // contact1:"7425034595",
+                    // contact2:"7453636335",
+                    // facility1:['ambu','blood','venti','chair'],
+                    // // facility2:[true,true,false,true],
+                    // bedavail:['general','icu'],
+                    // bedavail1:[100,80],
+                    // bedavail2:[50,20],
+                    // docavail1:['sergen','physician','ortho','gyro'],
+                    // docavail2:[true,false,true,false]
                     
                 }).save().then((newHospital) => {
                     //console.log('new hospital added: '+newHospital);
