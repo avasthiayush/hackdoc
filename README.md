@@ -1,2 +1,2 @@
 # hackdoc
-hackdoc for hospitals and patient.
+HACKDOC for hospitals and patient.
