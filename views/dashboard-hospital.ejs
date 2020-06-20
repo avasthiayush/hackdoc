@@ -318,6 +318,56 @@
                 </div>
             </div>
 
+            <div class="col-xl-6 col-lg-12" id="r2">
+                <div class="container" id="gen-info">
+                    <p id="p1">Availability of beds <i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
+                    <form action="/dashboard/update/beds"  method="POST">
+                        <input(type="hidden", name="_method", value="PUT")>
+                    <table>
+                        <tr>
+                            <th>Department</th>
+                            <th>Total Bed</th>
+                            <th>Available Bed</th>
+                        </tr>
+                        <%for(let i=0;i<hospital.bedavail1.length;i++){%>
+                            <tr>
+                                <td>
+                                <%if(i==0){%>
+                                    ICU
+                                <%}%>
+                                <%if(i==1){%>
+                                    General
+                                <%}%>
+                                <%if(i==2){%>
+                                    Covid-19
+                                <%}%>
+                                </td>
+                                <%if(i%2==0){%>
+                                    <td>
+                                    <input type="number" autocomplete="off"  name="avail" id="inp1" value="<%=hospital.bedavail1[i]%>">
+                                    </td>
+                                    <td>
+                                    <input type="number" autocomplete="off"  name="total" id="inp1" value="<%=hospital.bedavail2[i]%>">
+                                    </td>
+                                <%}%>
+                                <%if(i%2!=0){%>
+                                    <td>
+                                    <input type="number" autocomplete="off"  name="avail" id="inp1" value="<%=hospital.bedavail1[i]%>" style="background-color: #f3f3f3;">
+                                    </td>
+                                    <td>
+                                    <input type="number" autocomplete="off"  name="total" id="inp1" value="<%=hospital.bedavail2[i]%>" style="background-color: #f3f3f3;">
+                                    </td>
+                                <%}%>
+                                
+                            </tr>
+                        <%}%>
+                    </table>
+                    <div  style="text-align: center; padding: 10px 0 20px 0;">
+                        <button class="btnn btnn1">Save Changes</button>
+                    </div>
+                    </form>
+              </div>
+            </div>
         </div>
     </div>
     
@@ -349,11 +399,5 @@
         </div>
     </footer>
     <script src="/js/homepage.js"></script>
-    
-    
-
-
-
-
 </body>
 </html>
