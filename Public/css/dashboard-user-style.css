@@ -278,6 +278,41 @@ a:hover{
 }
 
 
+#r1{
+    padding: 30px 50px 30px 50px;
+}
+#rr1{
+    padding: 30px 50px 30px 50px;
+}
+#r2{
+    padding: 30px 50px 60px 50px;
+}
+
+#medical-logo{
+    background-image: url(/images/medical-logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #33cabb;
+    border-radius: 30px; 
+    text-align: center;
+    height: 100%;
+    padding-top: 20px;
+    box-shadow: 10px 10px 10px rgba(4, 85, 160, 0.4);
+    transition: transform 0.5s;
+}
+
+#gen-info{
+    border: 1px solid #33cabb;
+    border-radius: 30px; 
+    height: 100%;
+    box-shadow: 10px 10px 10px rgba(4, 85, 160, 0.4);
+    background-color: white;
+    transition: transform 0.5s;
+    overflow-x: auto;
+}
+
+
 .footer1 {
     position: relative;
     padding-top: 10px;
