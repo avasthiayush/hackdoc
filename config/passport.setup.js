@@ -6,6 +6,16 @@ require('dotenv').config();
 
 
 
+passport.serializeUser((hospital,done) => {
+    done(null,hospital.id);
+});
+
+
+passport.deserializeUser((id,done) => {
+    Hospital.findById(id).then((hospital) => {
+        done(null,hospital);
+    });
+});
 
 
 passport.use(
