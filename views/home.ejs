@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>HACKDOC | HOME</title>
+
+        <!-- All externel CSS and Scripts start here -->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -12,8 +14,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="/css/home-style.css">
+        <!-- All externel CSS and Scripts ends here -->
+
     </head>
     <body>
+        <!-- nav bar starts here -->
         <div>
             <nav class="navbar  navbar-default  navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="">
@@ -27,11 +32,9 @@
                         <li class="nav-item"><a href="#about" onclick="document.getElementById('modal-wrapper').style.display='block'" class="nav-link" id="node">About</a></li>
                         <li class="nav-item"><a href="#contact/to/us" class="nav-link" id="node">Contact</a></li>
                     </ul>
-
-<!-- ******************************search*************************************** -->
-
                     
-                    
+                    <!-- Search bar starts here -->
+
                     <form action="/search" method="GET" class="navbar-form form-inline" id="sb1">
                         <div class="input-group search-box">
                             <input type="text" id="search" class="form-control" placeholder="Search hospital..." name="searchhos" autocomplete="off">
@@ -40,8 +43,7 @@
                         </div>
                     </form>
 
-<!-- ********************************************************************* -->
-
+                    <!-- Search bar ends here -->
 
                     <ul class="nav navbar-nav navbar-right ml-auto">
                         <li class="nav-item">
@@ -55,6 +57,9 @@
                 </div>
             </nav>
         </div>
+        <!-- nav bar ends here -->
+    
+    <!-- About starts here -->
     <div id="modal-wrapper" class="modal">
         <form class="modal-content animate" >
             <h3 style="color: red;"> Who Are We</h3><br>
@@ -65,6 +70,9 @@
             <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
         </form>
     </div>
+    <!-- About ends here -->
+
+    <!-- Terms and conditions starts here -->
     <div id="modal-wrapper1" class="modal">
         <form class="modal-content animate" id="m1">
             <h3 style="color: red;"> Terms and Conditions:</h3>
@@ -95,11 +103,15 @@
             <span onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close" title="Close PopUp">&times;</span>
         </form>
     </div>
+    <!-- Terms and conditions ends here -->
+
     <div class="container">
         <div class="row">
             <div class="heading"></div>
         </div>
     </div>
+
+    <!-- Dieseases Info starts here -->
     <div class="container">
         <div class="row">
 
@@ -123,120 +135,129 @@
                 <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.medicalnewstoday.com/articles/215638" >Know More</a></button>
             </div>
         </div>
-<!-- ************************************************************ -->
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12 " >
-                <div class="card" id="a1">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Appendicitis</b> is an inflammation of the appendix, a finger-shaped pouch that projects from your colon on the lower right side of your abdomen.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.mayoclinic.org/diseases-conditions/appendicitis/symptoms-causes/syc-20369543#:~:text=Appendicitis%20is%20an%20inflammation%20of,the%20navel%20and%20then%20moves." >Know More</a></button>
-                </div>
-            </div>
 
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="card" id="a2">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Asthma</b> is a condition in which your airways narrow and swell and may produce extra mucus. This can make breathing difficult and trigger coughing.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.mayoclinic.org/diseases-conditions/asthma/symptoms-causes/syc-20369653#:~:text=Asthma%20is%20a%20condition%20in,asthma%20is%20a%20minor%20nuisance." >Know More</a></button>
-                </div>
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12 " >
+            <div class="card" id="a1">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Appendicitis</b> is an inflammation of the appendix, a finger-shaped pouch that projects from your colon on the lower right side of your abdomen.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.mayoclinic.org/diseases-conditions/appendicitis/symptoms-causes/syc-20369543#:~:text=Appendicitis%20is%20an%20inflammation%20of,the%20navel%20and%20then%20moves." >Know More</a></button>
             </div>
+        </div>
 
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="card" id="a3">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Low blood pressure</b> (hypotension) can cause dizziness and fainting. In severe cases, low blood pressure can be life-threatening.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.mayoclinic.org/diseases-conditions/low-blood-pressure/symptoms-causes/syc-20355465#:~:text=In%20severe%20cases%2C%20low%20blood,generally%20considered%20low%20blood%20pressure." >Know More</a></button>
-                </div>
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="a2">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Asthma</b> is a condition in which your airways narrow and swell and may produce extra mucus. This can make breathing difficult and trigger coughing.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.mayoclinic.org/diseases-conditions/asthma/symptoms-causes/syc-20369653#:~:text=Asthma%20is%20a%20condition%20in,asthma%20is%20a%20minor%20nuisance." >Know More</a></button>
             </div>
-<!-- ************************************************************* -->
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12 " >
-                <div class="card" id="a1">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Chikungunya</b> virus is spread to people by the bite of an infected mosquito. The most common symptoms of infection are fever and joint pain.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.cdc.gov/chikungunya/index.html" >Know More</a></button>
-                </div>
-            </div>
+        </div>
 
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="card" id="a2">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Coronary Heart Disease</b> develops when coronary arteries become too narrow which are blood vessels that supply oxygen to the heart.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.medicalnewstoday.com/articles/184130" >Know More</a></button>
-                </div>
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="a3">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Low blood pressure</b> (hypotension) can cause dizziness and fainting. In severe cases, low blood pressure can be life-threatening.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.mayoclinic.org/diseases-conditions/low-blood-pressure/symptoms-causes/syc-20355465#:~:text=In%20severe%20cases%2C%20low%20blood,generally%20considered%20low%20blood%20pressure." >Know More</a></button>
             </div>
+        </div>
 
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="card" id="a3">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Coronavirus disease</b> (COVID-19) is an infectious disease caused by coronavirus. Most people infected with this will experience respiratory illness.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.who.int/health-topics/coronavirus#tab=tab_1" >Know More</a></button>
-                </div>
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12 " >
+            <div class="card" id="a1">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Chikungunya</b> virus is spread to people by the bite of an infected mosquito. The most common symptoms of infection are fever and joint pain.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.cdc.gov/chikungunya/index.html" >Know More</a></button>
             </div>
-<!-- ************************************************************* -->
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12 " >
-                <div class="card" id="a1">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Diabetes</b> is a number of diseases that involve problems with the hormone insulin. The pancreas releases insulin to help your body store and use sugar and fat from food.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.webmd.com/diabetes/default.htm" >Know More</a></button>
-                </div>
-            </div>
+        </div>
 
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="card" id="a2">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Migraine</b> is a powerful headache that often happens with nausea, vomiting, and sensitivity to light. Migraines can last from 4 hours to 3 days, and sometimes longer.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.webmd.com/migraines-headaches/migraines-headaches-migraines#:~:text=A%20migraine%20is%20a%20powerful,times%20more%20often%20than%20men." >Know More</a></button>
-                </div>
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="a2">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Coronary Heart Disease</b> develops when coronary arteries become too narrow which are blood vessels that supply oxygen to the heart.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.medicalnewstoday.com/articles/184130" >Know More</a></button>
             </div>
+        </div>
 
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="card" id="a3">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Heart attack</b> is the death of a segment of heart muscle caused by a loss of blood supply which cuts off when an artery supplying the heart muscle is blocked by blood clot.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.medicalnewstoday.com/articles/151444#:~:text=A%20heart%20attack%20is%20the,of%20the%20heart%20muscle%20tissue." >Know More</a></button>
-                </div>
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="a3">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Coronavirus disease</b> (COVID-19) is an infectious disease caused by coronavirus. Most people infected with this will experience respiratory illness.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.who.int/health-topics/coronavirus#tab=tab_1" >Know More</a></button>
             </div>
-<!-- ********************************************************** -->
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12 " >
-                <div class="card" id="a1">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>High blood pressure</b> occurs when blood pressure increases. Blood pressure measurement is based on how much blood is passing through your blood vessels and resistance blood meets when heart pumps.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.healthline.com/health/high-blood-pressure-hypertension#overview" >Know More</a></button>
-                </div>
-            </div>
+        </div>
 
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="card" id="a2">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Kidney stones</b> are small "pebbles" of salt and mineral in the urine. The most common symptom is severe pain. Most stones pass on their own, but medical procedures are used to remove some kidney stones.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.webmd.com/kidney-stones/default.htm" >Know More</a></button>
-                </div>
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12 " >
+            <div class="card" id="a1">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Diabetes</b> is a number of diseases that involve problems with the hormone insulin. The pancreas releases insulin to help your body store and use sugar and fat from food.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.webmd.com/diabetes/default.htm" >Know More</a></button>
             </div>
+        </div>
 
-            <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                <div class="card" id="a3">
-                    <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Eosinophilia</b> refers to a condition of having an increased numbers of eosinophils in the peripheral blood. White blood cells are an essential component of the cellular immune system.</p>
-                    <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://my.clevelandclinic.org/health/diseases/17710-eosinophilia#:~:text=Eosinophilia%20refers%20to%20a%20condition,of%20the%20cellular%20immune%20system." >Know More</a></button>
-                </div>
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="a2">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Migraine</b> is a powerful headache that often happens with nausea, vomiting, and sensitivity to light. Migraines can last from 4 hours to 3 days, and sometimes longer.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.webmd.com/migraines-headaches/migraines-headaches-migraines#:~:text=A%20migraine%20is%20a%20powerful,times%20more%20often%20than%20men." >Know More</a></button>
             </div>
-<!-- ************************************************************* -->
-    </div>
-</div>
-<br> <br>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-<footer class="footer1" id="contact/to/us">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4">
-                <a href="/team" style="color: white;"><i class="fa fa-users" aria-hidden="true"></i> Visit us </a>
-               </div>
-               <div class="col-xl-4">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hackdoc18@gmail.com&su=SUBJECT&body=BODY" style="color: white;"><i class="fa fa-envelope" aria-hidden="false" style="color: white;"></i> Mail us for any query</a>
-               </div>
-               <div class="col-xl-4">
-                <a href="#terms&conditions" onclick="document.getElementById('modal-wrapper1').style.display='block'" style="color: white;">Terms &amp; Conditions</a>
-               </div>
+        </div>
+
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="a3">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Heart attack</b> is the death of a segment of heart muscle caused by a loss of blood supply which cuts off when an artery supplying the heart muscle is blocked by blood clot.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.medicalnewstoday.com/articles/151444#:~:text=A%20heart%20attack%20is%20the,of%20the%20heart%20muscle%20tissue." >Know More</a></button>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12 " >
+            <div class="card" id="a1">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>High blood pressure</b> occurs when blood pressure increases. Blood pressure measurement is based on how much blood is passing through your blood vessels and resistance blood meets when heart pumps.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.healthline.com/health/high-blood-pressure-hypertension#overview" >Know More</a></button>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="a2">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Kidney stones</b> are small "pebbles" of salt and mineral in the urine. The most common symptom is severe pain. Most stones pass on their own, but medical procedures are used to remove some kidney stones.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://www.webmd.com/kidney-stones/default.htm" >Know More</a></button>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="a3">
+                <p class="about-me" style="text-align: center; margin-top: 15px;"><b>Eosinophilia</b> refers to a condition of having an increased numbers of eosinophils in the peripheral blood. White blood cells are an essential component of the cellular immune system.</p>
+                <button type="button" ><a style="text-decoration: none; color: white;" target="_blank" href="https://my.clevelandclinic.org/health/diseases/17710-eosinophilia#:~:text=Eosinophilia%20refers%20to%20a%20condition,of%20the%20cellular%20immune%20system." >Know More</a></button>
+            </div>
+        </div>
         </div>
     </div>
-</footer>
-<footer class="footer2">
-    <div class="container">
-        <div class="row">
-            <div class=" col-xl-12">
-                Copyright © 2020 <a href="/team" style="text-decoration: none; color:red;">unknown_bits</a>
-             </div>
+    <!-- Dieseases Info ends here -->
+    <br> <br>
+    <!-- Firing upwars button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <!-- Footer-1 starts here -->
+    <footer class="footer1" id="contact/to/us">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <a href="/team" style="color: white;"><i class="fa fa-users" aria-hidden="true"></i> Visit us </a>
+                </div>
+                <div class="col-xl-4">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hackdoc18@gmail.com&su=SUBJECT&body=BODY" style="color: white;"><i class="fa fa-envelope" aria-hidden="false" style="color: white;"></i> Mail us for any query</a>
+                </div>
+                <div class="col-xl-4">
+                    <a href="#terms&conditions" onclick="document.getElementById('modal-wrapper1').style.display='block'" style="color: white;">Terms &amp; Conditions</a>
+                </div>
+            </div>
         </div>
-    </div>
- </footer>
-  <script src="/js/homepage.js"></script>
+    </footer>
+    <!-- Footer-1 ends here -->
+
+    <!-- Footer-2 starts here -->
+    <footer class="footer2">
+        <div class="container">
+            <div class="row">
+                <div class=" col-xl-12">
+                    Copyright © 2020 <a href="/team" style="text-decoration: none; color:red;">unknown_bits</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-2 ends here -->
+
+    <!-- Static script inclusion -->
+    <script src="/js/homepage.js"></script>
 
 </body>
 </html>
