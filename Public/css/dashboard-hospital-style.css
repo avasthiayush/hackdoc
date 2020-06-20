@@ -420,3 +420,70 @@ tr.active-row{
     position: absolute; height: auto;
     
   }
+  .btnn:hover{
+    color: red;
+  }
+  
+  .btnn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: red;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .btnn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  .btnn1::before{
+    height: 180%;
+  } 
+  .btnn1:hover::before{
+    height: 0%;
+  }
+
+
+
+
+.footer1 {
+position: relative;
+padding-top: 10px;
+padding-bottom: 10px;
+left: 0;
+bottom: 6%;
+width: 100%;
+background-color: rgb(20, 20, 20);
+color: white;
+text-align: center; 
+margin-left: 0;
+border-bottom: 1px solid black;
+}
+
+.footer2 {
+position: relative;
+padding-top: 10px;
+padding-bottom: 10px;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center; 
+margin-left: 0;
+} 
+
+.modal {
+display:none;
+position: fixed;
+background-color: white;
+left: 25%;
+top: 19%;
+width: 50%;
+height: 50%;
+overflow: auto;
+border-radius: 30px;
+box-shadow: 10px 10px 20px rgba(71, 194, 231, 0.9);
+}
