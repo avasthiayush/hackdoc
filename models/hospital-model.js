@@ -6,7 +6,7 @@ const hospitalSchema = new Schema({
     googleId:String,
     email:String,
     name:{ type:String ,uppercase:true},
-    address:{ type:String, default:"iamaddress" , uppercase:true},
+    address:{ type:String, default:"update your address" , uppercase:true},
     contact1:{ type:String, default:"0000000000"},
     contact2:{ type:String, default:"0000000000"},
     facility:{type:Array, default: ["NO","NO","NO","NO","NO"]},
