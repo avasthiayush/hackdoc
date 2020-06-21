@@ -24,14 +24,47 @@ app.use(express.static(path.join(__dirname + '/Public')));
 // app.set('views', path.join(__dirname, 'views'));
 
 
+//cookie
+app.use(cookieSession({
+    maxAge: 24*60*60*1000,
+    keys: [process.env.cookieKey]
+}));
+
+//initialise passort
+app.use(passport.initialize());
+app.use(passport.session());
+
+//login and signup
+app.use('/auth',authRoutes);
+app.use('/dashboard-hospital',dashboardRoutes);
+
 //db connection
 const uri = process.env.dbURL;
 mongoose.connect(uri, {useNewUrlParser: true ,useUnifiedTopology: true}, () =>{
     console.log('Connected to db');
 })
 
+
 mongoose.set('useFindAndModify', false);
 const Hospital = require('./models/hospital-model');
+const authCheck = (req,res,next) => {
+    if(!req.user){
+        //if user is not logged in
+        res.redirect('/auth/login');
+    }
+    else{
+        next();
+    }
+};
+
+
+app.get('/search',function(req,res){
+    var y= Hospital.find({name:req.query.searchhos})
+    y.exec(function (err, data) {
+    if(data.length==0) res.render('error');
+    else res.render('dashboard-user',{hospital:data[0]});
+   });
+})
 
 
 app.get('/',function(req,res)
