@@ -11,6 +11,7 @@ const methodOverride = require('method-override');
 const bodyParser= require('body-parser');
 require('dotenv').config();
 
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -45,6 +46,7 @@ mongoose.connect(uri, {useNewUrlParser: true ,useUnifiedTopology: true}, () =>{
 })
 
 
+
 mongoose.set('useFindAndModify', false);
 const Hospital = require('./models/hospital-model');
 const authCheck = (req,res,next) => {
@@ -67,38 +69,39 @@ app.get('/search',function(req,res){
 })
 
 
+
 // *************update for general information
 app.post('/dashboard/update/geninfo',authCheck,function(req,res){
-    Hospital.findByIdAndUpdate({_id:req.user._id},
-                     {
-                    name:req.body.name,
-                    address:req.body.address,
-                    contact1:req.body.contact1,
-                    contact2:req.body.contact2
+            Hospital.findByIdAndUpdate({_id:req.user._id},
+                             {
+                            name:req.body.name,
+                            address:req.body.address,
+                            contact1:req.body.contact1,
+                            contact2:req.body.contact2
 
-                     },function(err, docs){
-                        if(err) res.json(err);
-                       else
-                       { 
-                        res.redirect('/dashboard-hospital');
-                        }
-                    });
-});
+                             },function(err, docs){
+                                if(err) res.json(err);
+                               else
+                               { 
+                                res.redirect('/dashboard-hospital');
+                                }
+                            });
+        });
 
+        
 // *************update for facilities available
-app.post('/dashboard/update/facavail',authCheck,function(req,res){
-    Hospital.findByIdAndUpdate({_id:req.user._id},
-                     {
-                    facility:req.body.fac
-                     },function(err, docs){
-                        if(err) res.json(err);
-                       else
-                       { 
-                        res.redirect('/dashboard-hospital');
-                        }
-                    });
-});
-
+        app.post('/dashboard/update/facavail',authCheck,function(req,res){
+            Hospital.findByIdAndUpdate({_id:req.user._id},
+                             {
+                            facility:req.body.fac
+                             },function(err, docs){
+                                if(err) res.json(err);
+                               else
+                               { 
+                                res.redirect('/dashboard-hospital');
+                                }
+                            });
+        });
 
 // *************update for doctors available
 app.post('/dashboard/update/docavail',authCheck,function(req,res){
@@ -114,7 +117,6 @@ app.post('/dashboard/update/docavail',authCheck,function(req,res){
                         }
                     });
 });
-
 
 // *************update for blood available
 app.post('/dashboard/update/bloodavail',authCheck,function(req,res){
@@ -132,15 +134,30 @@ app.post('/dashboard/update/bloodavail',authCheck,function(req,res){
                     });
 });
 
+// *************update for bed available
+app.post('/dashboard/update/beds',authCheck,function(req,res){
+    Hospital.findByIdAndUpdate({_id:req.user._id},
+                     {
+                         bedavail1:req.body.avail,
+                        bedavail2:req.body.total
+                     },function(err, docs){
+                        if(err) res.json(err);
+                       else
+                       {
+                           res.redirect('/dashboard-hospital');
+                        }
+                    });
+});
+
 
 app.get('/',function(req,res)
 {
     res.render('home');
 });
 
-// app.get('/team',function(req,res){
-//     res.render('team');
-// });
+app.get('/team',function(req,res){
+    res.render('team');
+});
 
 app.listen(port,()=>{
     console.log(`Server is running at http://localhost:${port}`);
