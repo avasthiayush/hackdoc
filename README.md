@@ -10,7 +10,7 @@ These are Few Snapshots of working module of HackDoc.<br>
 4.octocat1 hospital<br>
 5.octocat2 hospital<br>
 
-U can see informations about above given dummy hospitals.
+You can see informations about above given dummy hospitals. So to use our search function, you have to enter the above registered hospitals name otherwise you will see an error page:) 
 
 ## 1.Homepage
 Hope page of HackDoc contains few general information about common dieseases.
