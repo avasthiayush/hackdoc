@@ -516,3 +516,10 @@
 		margin-left: 40px;
 	}
  }
+
+ @media (max-width: 750px){
+	.modal-content{
+		padding: 50px 40px 50px 30px;
+	}
+ }
+
