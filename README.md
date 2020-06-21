@@ -1,6 +1,11 @@
 # hackdoc
 HackDoc is a webapp developed for tracking realtime availability of Blood,Beds,Doctors in Hospitals.<br>
 
+Working model can be tested live <a href="http://hackdoc.herokuapp.com/">here</a>
+<br>
+
+Demo video explaining hackdoc can be seen <a href="https://youtu.be/fe2G4kbHUVE" target="_blank">here</a>
+
 These are Few Snapshots of working module of HackDoc.<br>
 
 # Dummy Hospital Names
