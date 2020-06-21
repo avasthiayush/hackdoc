@@ -3,6 +3,15 @@ HackDoc is a webapp developed for tracking realtime availability of Blood,Beds,D
 
 These are Few Snapshots of working module of HackDoc.<br>
 
+# Dummy Hospital Names
+1.hackjaipur<br>
+2.dummy1<br>
+3.dummy2<br>
+4.octocat1 hospital<br>
+5.octocat2 hospital<br>
+
+U can see informations about above given dummy hospitals.
+
 ## 1.Homepage
 Hope page of HackDoc contains few general information about common dieseases.
 <br><br>
