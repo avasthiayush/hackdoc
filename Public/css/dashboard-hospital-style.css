@@ -405,6 +405,7 @@ tr.active-row{
 
 
 .btnn{
+    outline: none;
     border: 2px solid red;
     justify-content: center;
     height: 40px;
