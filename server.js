@@ -100,6 +100,23 @@ app.post('/dashboard/update/facavail',authCheck,function(req,res){
 });
 
 
+// *************update for doctors available
+app.post('/dashboard/update/docavail',authCheck,function(req,res){
+    Hospital.findByIdAndUpdate({_id:req.user._id},
+                     {
+                    docavail:req.body.doc
+
+                     },function(err, docs){
+                        if(err) res.json(err);
+                       else
+                       { 
+                        res.redirect('/dashboard-hospital');
+                        }
+                    });
+});
+
+
+
 app.get('/',function(req,res)
 {
     res.render('home');
