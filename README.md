@@ -13,13 +13,13 @@ These are Few Snapshots of working module of HackDoc.<br>
 You can see informations about above given dummy hospitals. So to use our search function, you have to enter the above registered hospitals name otherwise you will see an error page:) 
 
 ## 1.Homepage
-Hope page of HackDoc contains few general information about common dieseases.
+Home page of HackDoc contains few general information about common diseases.
 <br><br>
 ![](/modelsnaps/1.png)
 
 
 ## 2.Who we are.
-This page will provide information about our Key idea of builduing HackDoc.
+This page will provide information about our Key idea of building HackDoc.
 <br>
 <br>
 ![](/modelsnaps/2.png)
