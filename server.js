@@ -67,6 +67,25 @@ app.get('/search',function(req,res){
 })
 
 
+// *************update for general information
+app.post('/dashboard/update/geninfo',authCheck,function(req,res){
+    Hospital.findByIdAndUpdate({_id:req.user._id},
+                     {
+                    name:req.body.name,
+                    address:req.body.address,
+                    contact1:req.body.contact1,
+                    contact2:req.body.contact2
+
+                     },function(err, docs){
+                        if(err) res.json(err);
+                       else
+                       { 
+                        res.redirect('/dashboard-hospital');
+                        }
+                    });
+});
+
+
 app.get('/',function(req,res)
 {
     res.render('home');
