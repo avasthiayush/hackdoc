@@ -116,6 +116,22 @@ app.post('/dashboard/update/docavail',authCheck,function(req,res){
 });
 
 
+// *************update for blood available
+app.post('/dashboard/update/bloodavail',authCheck,function(req,res){
+    Hospital.findByIdAndUpdate({_id:req.user._id},
+                     {
+                        bloodavail1:req.body.blood1,
+                        bloodavail2:req.body.blood2
+
+                     },function(err, docs){
+                        if(err) res.json(err);
+                       else
+                       { 
+                        res.redirect('/dashboard-hospital');
+                        }
+                    });
+});
+
 
 app.get('/',function(req,res)
 {
