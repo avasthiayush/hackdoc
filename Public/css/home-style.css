@@ -521,5 +521,9 @@
 	.modal-content{
 		padding: 50px 5px 50px 5px;
 	}
+	.modal{
+		width: 70%;
+	    height: 60%;
+	}
  }
 
