@@ -397,7 +397,7 @@ tr.active-row{
 
 #inp2{
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -417,8 +417,7 @@ tr.active-row{
     padding: 5px 15px 5px 15px;
     color: black;
     transition: 0.6s;
-    position: absolute; height: auto;
-    
+    position: relative; 
   }
   .btnn:hover{
     color: red;
