@@ -85,6 +85,20 @@ app.post('/dashboard/update/geninfo',authCheck,function(req,res){
                     });
 });
 
+// *************update for facilities available
+app.post('/dashboard/update/facavail',authCheck,function(req,res){
+    Hospital.findByIdAndUpdate({_id:req.user._id},
+                     {
+                    facility:req.body.fac
+                     },function(err, docs){
+                        if(err) res.json(err);
+                       else
+                       { 
+                        res.redirect('/dashboard-hospital');
+                        }
+                    });
+});
+
 
 app.get('/',function(req,res)
 {
