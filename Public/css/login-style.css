@@ -256,3 +256,14 @@ body{
            padding-top: 8px;
         }
     }
+
+    @media (max-width: 750px){
+        .modal-content{
+            padding: 50px 5px 50px 5px;
+        }
+        .modal{
+            width: 70%;
+            height: 60%;
+            left:15%
+        }
+     }

@@ -568,3 +568,15 @@ box-shadow: 10px 10px 20px rgba(71, 194, 231, 0.9);
             display: none;
         }
      }
+
+
+     @media (max-width: 750px){
+        .modal-content{
+            padding: 50px 5px 50px 5px;
+        }
+        .modal{
+            width: 70%;
+            height: 60%;
+            left:15%
+        }
+     }

@@ -513,7 +513,7 @@
 
 @media (max-width: 487px){
 	.card{
-		margin-left: 40px;
+		margin-left: 20px;
 	}
  }
 
@@ -524,7 +524,7 @@
 	.modal{
 		width: 70%;
 		height: 60%;
-		left:13%
+		left:15%
 	}
  }
 
