@@ -35,8 +35,8 @@
                     
                     <!-- Search bar starts here -->
 
-                    <form action="/search" method="GET" class="navbar-form form-inline" id="sb1">
-                        <div class="input-group search-box">
+                    <form autocomplete="off" action="/search" method="GET" class="navbar-form form-inline" id="sb1">
+                        <div class="autocomplete" class="input-group search-box">
                             <input type="text" id="search" class="form-control" placeholder="Search hospital..." name="searchhos" autocomplete="off">
                             <button id="search-button">Search</button>
                             <!-- <a href=""><span class="input-group-addon"><i class="material-icons"></i></span></a> -->
@@ -258,5 +258,9 @@
 
     <!-- Static script inclusion -->
         <script src="/js/homepage.js"></script>
+        <script>
+            let hospitals=["hackdoc","dummy1","dummy2","dummy3","dummy4","dummy5","dummy6","leelavati hospital"];
+          autocomplete(document.getElementById("search"), hospitals);
+        </script>
     </body>
 </html>
