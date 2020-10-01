@@ -37,21 +37,16 @@ document.getElementById("clicksearch").addEventListener("click",function()
      
 });
 
+const update = document.querySelector('#update1_hospitalbed')
 
-// updating data
+ update.addEventListener('click',  => {
+   fetch('/dashboard/update/hospital_beds', {
+     method: 'put',
+     headers: { 'Content-Type': 'application/json' },
+     body: JSON.stringify(),
+   })
 
-
-// const update = document.querySelector('#update1')
-
-// update.addEventListener('click', _ => {
-//   // Send PUT Request here
-//   fetch('/dashboard/update/beds', {
-//     method: 'put',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify(),
-//   })
-
-// })
+})
 
 
 
